@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane prefHeight="94.0" prefWidth="600.0">
+            <children>
+                <Button fx:id="_addBtn" layoutX="34.0" layoutY="22.0" mnemonicParsing="false" prefHeight="50.0"
+                        prefWidth="60.0" text="Add">
+                    <onAction>#onAddBtnClicked</onAction>
+                </Button>
+                <Button layoutX="113.0" layoutY="22.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="60.0"
+                        text="Clear"/>
+                <RadioButton layoutX="293.0" layoutY="39.0" mnemonicParsing="false" text="RadioButton"/>
+                <RadioButton layoutX="430.0" layoutY="39.0" mnemonicParsing="false" text="RadioButton"/>
+            </children>
+        </Pane>
+        <TableView fx:id="_tableView" prefHeight="200.0" prefWidth="200.0">
+            <columns>
+                <TableColumn fx:id="_idColumn" prefWidth="48.19998246431351" text="id"/>
+                <TableColumn fx:id="_textColumn" prefWidth="186.99999618530273" text="text"/>
+            </columns>
+        </TableView>
+    </children>
+</VBox>
